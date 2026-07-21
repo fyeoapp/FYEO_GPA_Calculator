@@ -128,7 +128,7 @@ export default function App() {
                 className="transition-transform hover:scale-[1.03] active:scale-[0.98]"
               >
                 <img 
-                  src="/GetItOnGooglePlay_Badge_Web_color_English.svg" 
+                  src="./GetItOnGooglePlay_Badge_Web_color_English.svg" 
                   alt="Get it on Google Play" 
                   className="w-full h-10 object-contain"
                 />
@@ -142,7 +142,7 @@ export default function App() {
                 className="transition-transform hover:scale-[1.03] active:scale-[0.98]"
               >
                 <img 
-                  src="/Black_logo_app_store.svg" 
+                  src="./Black_logo_app_store.svg" 
                   alt="Download on the App Store" 
                   className="w-full h-10 object-contain"
                 />
@@ -156,7 +156,7 @@ export default function App() {
             {/* Left Column: Image (Takes up 1/3 of the space) */}
             <div className="w-1/3 shrink-0">
               {/* Be sure to replace '/feedback_image.png' with your actual image file name located in the public folder */}
-              <img src="/fyeo_logo.png" alt="Feedback" className="w-full h-auto object-contain border border-slate-300" />
+              <img src="./fyeo_logo.png" alt="Feedback" className="w-full h-auto object-contain border border-slate-300" />
             </div>
 
             {/* Right Column: Text & Button (Takes up 2/3 of the space) */}
@@ -212,7 +212,7 @@ function Header({ activeTab, setActiveTab, isMobileMenuOpen, setIsMobileMenuOpen
             </svg>
           </button>
           
-          <img src="/GPA_Calc.png" alt="FYEO Logo" className="h-10 sm:h-14 md:h-20 w-auto object-contain shadow-lg" />
+          <img src="./GPA_Calc.png" alt="FYEO Logo" className="h-10 sm:h-14 md:h-20 w-auto object-contain shadow-lg" />
           <span className="text-white text-lg sm:text-xl md:text-3xl font-bold tracking-tight">FYEO GPA Calculator</span>
         </div>
         {/* Desktop Navigation */}
@@ -351,10 +351,10 @@ function Header({ activeTab, setActiveTab, isMobileMenuOpen, setIsMobileMenuOpen
                 <h3 className="text-md font-bold text-white uppercase tracking-wider mb-3">Download Our App</h3>
                 <div className="grid grid-cols-2 gap-2">
                   <a href="https://play.google.com/store/apps/details?id=com.fyengtmu.fyeng&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="flex justify-center">
-                    <img src="/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Google Play" className="h-10 object-contain" />
+                    <img src="./GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Google Play" className="h-10 object-contain" />
                   </a>
                   <a href="https://apps.apple.com/ca/app/fyeng-mobile/id6749859039" target="_blank" rel="noopener noreferrer" className="flex justify-center">
-                    <img src="/Black_logo_app_store.svg" alt="App Store" className="h-10 object-contain" />
+                    <img src="./Black_logo_app_store.svg" alt="App Store" className="h-10 object-contain" />
                   </a>
                 </div>
               </div>

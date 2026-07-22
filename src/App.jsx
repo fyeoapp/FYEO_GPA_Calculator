@@ -75,19 +75,21 @@ export default function App() {
         
         {/* Left Panel (Narrower width: w-48, reduced padding: p-4) */}
         <aside className="hidden lg:flex flex-col w-70 p-4 border-r border-slate-200 bg-[#7474c1] rounded-lg space-y-3 shrink-0">
-          <h3 className="text-xl pt-3 pb-3 font-bold text-white uppercase tracking-wider mb-2">Academic Resources</h3>
+          <h3 className="text-xl pt-2 pb-2 font-bold text-white uppercase tracking-wider mb-2">Academic Resources</h3>
           {leftPanelLinks.map(link => (
             <a key={link.id} target="_blank" rel="noopener noreferrer" href={link.url} className="px-3 py-2 bg-[#ffdc00]  border border-slate-200 rounded-lg text-md font-medium text-black hover:bg-yellow-50 hover:text-[#792082] hover:border-[#792082]/30 transition-colors shadow-sm block text-center break-words">
               {link.label}
             </a>
           ))}
 
-          <h3 className="text-xl pt-6 pb-3 font-bold text-white uppercase tracking-wider mb-2">Study Support</h3>
+          <h3 className="text-xl pt-4 pb-2 font-bold text-white uppercase tracking-wider mb-2">Study Support</h3>
           {leftPanelSecondaryLinks.map(link => (
             <a key={link.id} target="_blank" rel="noopener noreferrer" href={link.url} className="px-3 py-2 bg-[#d9d9d9]  border border-slate-200 rounded-lg text-md font-medium text-black hover:bg-yellow-50 hover:text-[#792082] hover:border-[#792082]/30 transition-colors shadow-sm block text-center break-words">
               {link.label}
             </a>
           ))}
+
+         <img src="./FYEO_Logo_Black.png" alt="Feedback" className="w-full h-auto mt-4 object-contain border rounded-lg bg-white border-slate-700 shadow-md" />
 
         </aside>
 
@@ -149,33 +151,23 @@ export default function App() {
               </a>
             </div>
           </div>
-
-          {/* NEW: Feedback Card (Image Left, Content Right) */}
-          <div className="mt-4 flex flex-row items-center gap-3 bg-yellow-50 p-3 rounded-xl border border-slate-200 shadow-sm">
-            
-            {/* Left Column: Image (Takes up 1/3 of the space) */}
-            <div className="w-1/3 shrink-0">
-              {/* Be sure to replace '/feedback_image.png' with your actual image file name located in the public folder */}
-              <img src="./fyeo_logo.png" alt="Feedback" className="w-full h-auto object-contain border border-slate-300" />
-            </div>
-
-            {/* Right Column: Text & Button (Takes up 2/3 of the space) */}
-            <div className="w-2/3 flex flex-col">
-              <h3 className="text-sm font-bold text-black uppercase tracking-wider mb-1">
-                We Value Your Feedback!
-              </h3>
-              <p className="text-[13px] text-slate-1000 mb-2 leading-tight">
-                Help us improve the Calculator by sharing your thoughts.
-              </p>
-              <button 
-                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfS4v2l6lEqOK0W6YOXI9i7LfQWM0HXT0mshs7-waxhV2aeRQ/viewform?usp=publish-editor', '_blank')} 
-                className="px-2 py-1.5 bg-[#ffdc00]  text-black text-[13px] font-semibold rounded-lg hover:bg-[#e6c500] transition-colors shadow-sm w-full"
-              >
-                Share Feedback
-              </button>
-            </div>
-            
+          
+          {/* NEW: Feedback Card */}
+          <div className="mt-4 bg-yellow-50 p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col">
+            <h3 className="text-sm font-bold text-black uppercase tracking-wide mb-1">
+              We Value Your Feedback!
+            </h3>
+            <p className="text-[13px] text-slate-700 mb-3 leading-tight">
+              Help us improve the Calculator by sharing your thoughts.
+            </p>
+            <button 
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfS4v2l6lEqOK0W6YOXI9i7LfQWM0HXT0mshs7-waxhV2aeRQ/viewform?usp=publish-editor', '_blank')} 
+              className="px-3 py-2 bg-[#ffdc00] text-black text-[13px] font-bold rounded-lg hover:bg-[#e6c500] transition-colors shadow-sm w-full"
+            >
+              Share Feedback
+            </button>
           </div>
+
 
         </aside>
 
@@ -212,8 +204,8 @@ function Header({ activeTab, setActiveTab, isMobileMenuOpen, setIsMobileMenuOpen
             </svg>
           </button>
           
-          <img src="./GPA_Calc.png" alt="FYEO Logo" className="h-10 sm:h-14 md:h-20 w-auto object-contain shadow-lg" />
-          <span className="text-white text-lg sm:text-xl md:text-3xl font-bold tracking-tight">FYEO GPA Calculator</span>
+          <img src="./GPA_Calc.png" alt="FYEO Logo" className="h-14 sm:h-14 md:h-20 w-auto object-contain shadow-lg" />
+          <span className="text-white text-2xl sm:text-xl md:text-3xl font-bold tracking-tight">FYEO GPA Calculator</span>
         </div>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex justify-items-end space-x-1 bg-black/15 p-1 rounded-lg backdrop-blur-sm shadow-inner">

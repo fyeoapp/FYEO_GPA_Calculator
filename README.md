@@ -195,7 +195,7 @@ Open the address it prints. Note the path: it's **http://localhost:5173/FYEO_GPA
 └── vite.config.js           # Sets base: '/FYEO_GPA_Calculator/' for GitHub Pages
 ```
 
-`src/App1.jsx`, `src/App2.jsx` and `src/assets/` are older drafts and template files that nothing uses. They can be deleted.
+`src/assets/` holds starter template images that nothing uses. They can be deleted.
 
 ---
 

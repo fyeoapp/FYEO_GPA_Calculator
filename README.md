@@ -4,7 +4,7 @@ A grade and GPA calculator for Toronto Metropolitan University (TMU) engineering
 
 **Live site:** https://fyeoapp.github.io/FYEO_GPA_Calculator/
 
-> **You're on the `experimental` branch.** It has everything on `main` plus the [course grade breakdown](#experimental-course-grade-breakdown), which is still being tried out. Check out `main` for the stable version.
+> The [course grade breakdown](#experimental-course-grade-breakdown) is new and still being tested. It is marked **Experimental** in the app.
 
 ---
 
@@ -67,7 +67,7 @@ Shows how this term's grades would change your overall CGPA.
 
 ## Experimental: course grade breakdown
 
-> Only on the `experimental` branch.
+> New and still being tested. The app marks it **Experimental**.
 
 This lets students split one Course Grade row into its parts. For example, *Labs (20%)* becomes Lab 1, Lab 2, … Lab 5.
 
@@ -225,7 +225,7 @@ Everything a student enters is saved in their own browser and nothing is sent an
 |---|---|
 | `active-calc-tab` | Last open tab (`course`, `term` or `cumulative`) |
 | `course-target` | Course Grade target % |
-| `course-assignments` | Course Grade rows (plus `parts` / `showParts` on `experimental`) |
+| `course-assignments` | Course Grade rows (plus `parts` / `showParts` for the breakdown) |
 | `term-courses` | Term GPA rows |
 | `cumulative-past` | Credits so far and current CGPA |
 | `cumulative-courses` | Cumulative GPA rows |
@@ -269,7 +269,7 @@ The first time, enable Pages for the repo: **Settings → Pages → Branch: `gh-
 | Branch | Purpose |
 |---|---|
 | `main` | Stable version |
-| `experimental` | `main` plus features still being tried out (currently the grade breakdown) |
+| `experimental` | For trying out new features before they go into `main` |
 
 For a fork set up with FYEO's repo as `upstream`:
 
@@ -279,7 +279,7 @@ git pull upstream main        # bring in FYEO's latest changes
 git push                      # push the current branch to your fork
 ```
 
-To move the experimental work into `main` once it's ready, open a pull request from `experimental` into `main`. To offer it to FYEO, open one from your fork to `fyeoapp/FYEO_GPA_Calculator`.
+When work on `experimental` is ready, merge it into `main`. To offer your changes to FYEO, open a pull request from your fork to `fyeoapp/FYEO_GPA_Calculator`.
 
 ---
 
